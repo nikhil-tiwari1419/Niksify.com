@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+    <title> Music.com </title>
+    <link rel="" href="">
+    <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Hamburger icon for mobile -->
+    <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+    <div class="container">
+
+        <!-- Left Sidebar (30%) -->
+        <div class="left" id="sidebar">
+            <h2> Library </h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html"target="_blank">Home</a></li>
+                    <li><a href="login.html"target="_blank" >Log-in</a></li>
+                    <!-- <li><a href="sign-up.html" target="_blank">Sign-up</a></li> -->
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <!-- <li><a href="contact.html" target="_blank">Contact</a></li> -->
+                    <li><a href="support.html" target="_blank">Support</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <br>
+            <div class="outer-box">
+                <button class="toggleBtn">song list </button>
+                <div class="inner-box" id="innerBox">
+                    <!-- js part  -->
+                </div>
+            </div>
+            <br>
+            <hr>
+            <footer>
+                <div class="Footer">
+                    &copy Copyright 2025 All rights reserved || Admin-contact :-Email-Id nikhiltiwari1425@gmail.com ||
+                    instagram || Github || twitter || Facebook
+                </div>
+            </footer>
+        </div>
+
+        <!-- Right Content Area (70%) -->
+        <div id="states" class="right">
+            <h1>Music App</h1>
+            <div class="account-container">
+                <button class="account-btn" id="togglesvg">
+                    <!-- User Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <circle cx="12" cy="8" r="4" />
+                        <path d="M4 20c0-4 4-6 8-6s8 2 8 6" />
+                    </svg>
+                    <!-- Down Arrow -->
+                    <svg id="arrowIcon" class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+
+                <div class="dropdown-box" id="dropBox">
+                    <a href="login.html" target="_blank">Login</a>
+                    <a href="#">Register</a>
+                    <a href="About.html">Profile</a>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <h5>‼️search function is not <br> enable !!(less song's) </h5>
+                <input type="text" id="songInput" placeholder="Search a song..." />
+                <button id="searchButton">Play </button>
+            </div>
+
+            <button class="DayNight"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+                </svg>
+            </button>
+            <!-- Example playlist Card -->
+            <div class="sidescroll">
+                <!-- <div class="playlist-card">
+                    <a href=""><img src="images/old song .jpg" alt="the local train album "
+                            class="singer-img"></a>
+                    <p>The local train special</p>
+                </div> -->
+            </div>
+            <br>
+            <!-- image change function -->
+            <div id="content"></div>
+            <div id="filter">
+                <img id="silder"
+                    src="https://images.unsplash.com/photo-1744019960830-eb79b2528f8e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMjB8fHxlbnwwfHx8fHw%3D"
+                    class="img" alt="unsplash images ">
+                <!-- js include  -->
+            </div>
+        </div> <!-- right portion complet  -->
+    </div><!-- main container -->
+    <script src="script.js"></script>
+
+</body>
+</html>

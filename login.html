@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(90deg, rgb(110, 122, 230), #cf99e9, #7a90b9, #a87dcf);
+            color: azure;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+            height: 100vh;
+            background-image: url(https://media.istockphoto.com/id/540099260/photo/musical-notes-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=t9mxF5UUztKhRibT3FLOJ8c3KIeO7mxWCqXcn2tRTaU=);
+            background-size: cover;
+        }
+
+        .child {
+            background-color: rgba(191, 248, 245, 0.212);
+            background-image: url(https://plus.unsplash.com/premium_photo-1677583195355-6228c24541a1?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-size: cover;
+            /* background-position:center; */
+            color: rgb(10, 3, 2);
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            width: 90%;
+            height: 640px;
+            max-width: 400px;
+        }
+
+        .child h1 {
+            text-align: center;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+            padding: 12px;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid blueviolet;
+            border-radius: 5px;
+        }
+
+        input[type="email"] {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid blueviolet;
+            border-radius: 5px;
+        }
+
+        /* .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        } */
+
+        input[type="reset"],
+        button {
+            padding: 10px;
+            width: 48.5%;
+            border: none;
+            margin-top: 25px;
+            border-radius: 5px;
+            background: #203a8f;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="reset"]:hover,
+        button:hover {
+            background: #4b1664;
+
+        }
+
+        @media screen and (max-width:480px) {
+            .child {
+                max-width: 300px;
+                /* height:500px; */
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="child">
+        <p><a href="INDEX.html"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                    stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M15 18l-6-6 6-6" />
+                </svg>
+            </a>Back</p>
+        <h1>Login page</h1>
+        <form>
+            <label for="login">UserName</label>
+            <input type="text" name="UserName" placeholder="UserName" required>
+
+            <label for="password"> password</label>
+            <input type="password" name="password" placeholder="password" required>
+
+            <label for="Cpassword">Conform password </label>
+            <input type="password" name="Cpassword" placeholder="Conform password" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Email" required>
+
+            <div>
+                <input type="reset" value="Reset">
+                <button type="submit">submit</button>
+            </div>
+        </form>
+        &copy Copyright 2025 <a href="">term's</a> and <a href="">condition</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Playlist - Support</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+      background-color: #027cee;
+      background-image: url('https://img.freepik.com/free-vector/guitar-musician-cartoon-with-music-melody-symbols_1308-103095.jpg?ga=GA1.1.771888595.1747663415&semt=ais_hybrid&w=740');
+    }
+
+    fieldset {
+      width: 90%;
+      max-width: 400px;
+      padding: 30px;
+      border: none;
+      border-radius: 20px;
+      backdrop-filter: blur(5px);
+      background: linear-gradient(55deg, #8cf76244, #57cdeb9a);
+    }
+
+    fieldset h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: rgb(6, 38, 128);
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      font-family: "Courier New", monospace;
+      border: none;
+      border-radius: 9px;
+      background: rgba(255, 255, 255, 0.5);
+    }
+
+    input[type="text"]:hover,
+    textarea:hover {
+      box-shadow: 0 0 8px rgba(235, 231, 8, 0.884);
+      color: rgb(13, 33, 124);
+    }
+
+    textarea {
+      height: 100px;
+      resize: vertical;
+    }
+
+    .btn,
+    input[type="reset"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 15px;
+      font-size: 16px;
+      font-family: "Courier New", monospace;
+      background: rgba(255, 255, 255, 0.5);
+      border: none;
+      border-radius: 9px;
+      cursor: pointer;
+    }
+
+    .btn:hover,
+    input[type="reset"]:hover {
+      box-shadow: 0 0 8px rgba(235, 231, 8, 0.884);
+      color: rgb(13, 33, 124);
+    }
+
+    .btn:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 480px) {
+      fieldset {
+        padding: 20px;
+      }
+
+      input,
+      textarea {
+        font-size: 14px;
+        padding: 8px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      label {
+        font-size: 14px;
+      }
+
+      .btn,
+      input[type="reset"] {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <fieldset>
+    <legend>
+      <h1>Support</h1>
+    </legend>
+    <form action="issue.php" method="post">
+      <label for="website">Website:</label>
+      <input type="text" name="website" id="website" placeholder="website" required>
+
+      <label for="studentid">Student ID:</label>
+      <input type="text" name="studentid" id="studentid" placeholder="Student ID" required>
+
+      <label for="studentname">Student Name:</label>
+      <input type="text" name="studentname" id="studentname" placeholder="Student Name" required>
+
+      <label for="studentcontact">Student Contact:</label>
+      <input type="text" name="studentcontact" id="studentcontact" placeholder="Student Contact" required>
+
+      <label for="studentemail">Student Email:</label>
+      <input type="text" name="studentemail" id="studentemail" placeholder="Student Email" required>
+
+      <label for="comment">Comment:</label>
+      <textarea name="comment" id="comment" placeholder="Your message..." required></textarea>
+
+      <input type="reset" value="Reset">
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </fieldset>
+</body>
+
+</html>
