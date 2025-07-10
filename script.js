@@ -36,8 +36,7 @@ btn.addEventListener("click", function () {
       `;
     } else {
       page.style.backgroundColor = "transparent";
-      page.style.color = "black"
-      page.style.backgroundImage = "url('https://images.unsplash.com/photo-1750327324411-b9c004feee37?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMzV8fHxlbnwwfHx8fHw%3D')"
+      page.style.color = "black";
       console.log("OFF");
       flag = 0;
       btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
