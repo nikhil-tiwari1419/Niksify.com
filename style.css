@@ -543,7 +543,7 @@ h1 {
     }
 
     .account-container {
-        left: 0px;
+        left: -40px;
         top: 10px;
         font-size: small;
 
@@ -558,12 +558,13 @@ h1 {
             background: #8d8b8b;
         }
     }
-
+  .dropdown-box{
+        width: 80px;
+    }
     .DayNight {
         position: absolute;
-        left: 365px;
+        left: 299px;
         top: 55px;
-
     }
 
     #content {
