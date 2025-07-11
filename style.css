@@ -575,7 +575,7 @@ h1 {
     } 
 
     #content {
-        width: 95%;
+        width:100%;
         justify-items: auto;
         max-width: none;
         margin: 0 auto;
@@ -620,10 +620,8 @@ h1 {
     }
 
     #content {
-        width: 95%;
-        transform: translate(50px 50px);
-        /* margin: 10px auto; */
-        /* padding: 10px; */
+        width: 100%;
+       
     }
 
 /* .account-container {
