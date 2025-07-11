@@ -9,10 +9,14 @@
 }
 
 body {
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    /* transition: all 0.5s ease-in-out ; */
+    /* color: #ece8e8ee; */
     transition: background-color 0.5s, color 0.5s;
 }
 
@@ -214,7 +218,7 @@ h1 {
 .account-container {
     position: absolute;
     display: inline-block;
-    left: 1270px;
+    right:4.5%;
     top: 65px;
 }
 
@@ -429,7 +433,7 @@ h1 {
     background-color: #f5f3ef57;
     border: none;
     position: absolute;
-    left: 1200px;
+    right:2.5%;
     transition: all 0.5 ease;
     cursor: pointer;
     overflow-y: hidden;
@@ -542,9 +546,10 @@ h1 {
         }
     }
 
-    .account-container {
-        left: -40px;
-        top: 10px;
+     .account-container {
+        position: absolute;
+        /* left:-30px; */
+        top:1%;
         font-size: small;
 
 
@@ -558,14 +563,16 @@ h1 {
             background: #8d8b8b;
         }
     }
-  .dropdown-box{
+    .dropdown-box{
         width: 80px;
     }
+
     .DayNight {
         position: absolute;
-        left: 355px;
-        top: 55px;
-    }
+        right:2.5%;
+        top: 6%;
+
+    } 
 
     #content {
         width: 95%;
@@ -618,6 +625,35 @@ h1 {
         /* margin: 10px auto; */
         /* padding: 10px; */
     }
+
+/* .account-container {
+        position: absolute;
+        left:-30px;
+        top: 10px;
+        font-size: small;
+
+
+    }
+
+    .account-btn {
+        background: #fff;
+        padding: 5px;
+
+        &:hover {
+            background: #8d8b8b;
+        }
+    }
+    .dropdown-box{
+        width: 80px;
+    }
+
+    .DayNight {
+        position: absolute;
+        left:322px;
+        top: 55px;
+
+    } */
+
 }
 
 @media (max-width: 480px) {
@@ -699,4 +735,8 @@ h1 {
 
 
     }
+    /* .account-container{
+        top:2%;
+        right: 1.4%;
+    } */
 }
