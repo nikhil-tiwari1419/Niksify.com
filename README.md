@@ -1,2 +1,2 @@
 # Niksify.com
-this is my basic music player web application , it is  responsive in all devices 
+This is my basic music player web application , it is  responsive in all devices 
